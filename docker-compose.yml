@@ -30,7 +30,7 @@ services:
     working_dir: /app
 
     # Spring Boot 自動起動はせず開発用に待機
-    command: tail -f /dev/null
+    command: ./gradlew bootRun
 
     ports:
       - "8080:8080"
@@ -39,10 +39,10 @@ services:
 
     volumes:
       # ソースコード共有
-      - ./src:/app/src
+      - .:/app
 
       # Gradle キャッシュを永続化（※Windows でも安全）
-      - gradle-cache:/home/gradle/.gradle
+      - gradle-cache:/root/.gradle
 
 volumes:
   postgres-data:
