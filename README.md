@@ -39,12 +39,6 @@
 | **Infrastructure** | Docker Compose ,Gradle |
 | **OS Environment** | WSL2 (Ubuntu / Alpine Linux) |
 | **Database** | PostgreSQL |
-- 言語: Kotlin
-- フレームワーク: Spring Boot
-- テンプレート: Thymeleaf
-- データベース: PostgreSQL
-- ビルドツール: Gradle（ラッパーあり: `./gradlew`）
-- コンテナ: Docker / Docker Compose（開発用設定あり）
 
 ## セットアップ手順
 
